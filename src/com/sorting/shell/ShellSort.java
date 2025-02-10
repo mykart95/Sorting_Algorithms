@@ -11,7 +11,7 @@ public class ShellSort {
 	public void sort() {
 		for (int gap = nums.length/2; gap>0; gap/=2) {
 			
-			for (int i = gap; i < nums.length; i++) {
+			for (int i = gap; i < nums.length; ++i) {
 				int j=i;
 					
 				while(j>gap && nums[j-gap]>nums[j]) {
